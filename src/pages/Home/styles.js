@@ -7,7 +7,7 @@ export const Header = styled.div`
   justify-content: center;
   align-items: center;
 
-  padding: 50px 50px 30px;
+  padding: 10px 10px 5px;
 
   header {
     margin: 10px;
@@ -42,6 +42,10 @@ export const Header = styled.div`
     }
   }
 `;
+
+
+
+
 
 export const Card = styled.li`
   color: #fff;

@@ -3,7 +3,21 @@ import { CardGrid, Card , Header } from './styles';
 
 const DisplayCharacter = props => {
     const character = props.character;
-    console.log(character);
+    if(character) {
+      switch(props.sorting) {
+        case "ascendant" : 
+        console.log(props.sorting);
+        character.sort((a, b) => (parseInt(a.id) - b.id));
+        break;
+        case "descendant" :
+            console.log(props.sorting);
+            character.sort((a, b) => (parseInt(b.id) - a.id));
+        break;
+        default:
+            character.sort((a, b) => (parseInt(a.id) > b.id));
+      }
+    }
+
     if (!character) {
         return (
           <div>
@@ -13,7 +27,8 @@ const DisplayCharacter = props => {
       }
       return(
         <CardGrid>
-           {character.map(char => (
+           {
+           character.map(char => (
                   <Card
                   key={char.id}
                 >
