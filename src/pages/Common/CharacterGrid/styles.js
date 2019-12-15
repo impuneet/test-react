@@ -46,7 +46,7 @@ export const Header = styled.div`
 
 export const Card = styled.li`
   color: #fff;
-  background: #7159c1;
+  background: #989898;
   margin: 10px;
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -64,13 +64,12 @@ export const Card = styled.li`
   }
 
   section {
-    /* top: 0;
-    position: absolute; */
+    text-align: center;
 
     header {
       padding: 5px 0 10px 10px;
 
-      h1 {
+      h3 {
         span {
           background: #fff;
           color: #7159c1;
@@ -79,7 +78,7 @@ export const Card = styled.li`
         }
       }
 
-      h3 {
+      h5 {
         color: #fff;
         margin-top: 5px;
       }
