@@ -44,7 +44,20 @@ eslint --fix
 
 ## Live Demo
 
+Desktop Grid
 ![en-US](https://github.com/impuneet/test-react/blob/master/screenshots/screen1.PNG)
+
+Tablet Grid
+![en-US](https://github.com/impuneet/test-react/blob/master/screenshots/screen2.PNG)
+
+Mobile Grid
+![en-US](https://github.com/impuneet/test-react/blob/master/screenshots/screen3.PNG)
+
+Search By Name 
+![en-US](https://github.com/impuneet/test-react/blob/master/screenshots/screen4.PNG)
+
+Filter Data & Sorting by ID
+![en-US](https://github.com/impuneet/test-react/blob/master/screenshots/screen5.PNG)
 
 
 ## Contributing
