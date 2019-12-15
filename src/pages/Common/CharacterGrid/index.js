@@ -1,5 +1,6 @@
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
+import { Header, Icon, Segment } from 'semantic-ui-react';
 import { CardGrid, Card } from './styles';
 
 const DisplayCharacter = props => {
@@ -18,6 +19,17 @@ const DisplayCharacter = props => {
         character.sort((a, b) => parseInt(a.id, 2) > b.id);
     }
   }
+  if (character && character.length === 0) {
+    return (
+      <Segment placeholder>
+        <Header icon>
+          <Icon name="search" />
+          We don't have any character matching your query.
+        </Header>
+      </Segment>
+    );
+  }
+
   if (!character) {
     return (
       <div>
